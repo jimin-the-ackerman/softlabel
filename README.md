@@ -18,6 +18,16 @@ across 5 text classification benchmarks, with the effect confirmed to transfer a
 
 ## How it works
 
+![HardPrompt vs. SoftPrompt: HardPrompt samples a hard label and prompts the LLM to generate a text belonging to that class; SoftPrompt samples a soft label (probability) from a distribution and prompts the LLM to generate text matching that probability mixture.](docs/figures/softprompt_vs_hardprompt.png)
+
+*HardPrompt (top) conditions the LLM on a discrete class label. SoftPrompt (bottom)
+samples a continuous probability from a label distribution and conditions the LLM on
+that mixture instead — enabling the nuanced, in-between examples a hard label can't
+express.*
+
+<details>
+<summary>Full pipeline (click to expand)</summary>
+
 ```mermaid
 flowchart LR
     A["Sample soft label p<br/>Beta(α,β) binary /<br/>Dirichlet(α) multi-class"] --> B["Construct prompt<br/>'~70% positive,<br/>30% negative'"]
@@ -26,6 +36,8 @@ flowchart LR
     D --> E["Train downstream classifier<br/>(logistic regr. / DistilBERT)"]
     E --> F["Evaluate:<br/>accuracy, diversity, ECE"]
 ```
+
+</details>
 
 ## Key results
 
