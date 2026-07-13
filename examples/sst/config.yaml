@@ -1,0 +1,10 @@
+batch_size: 50
+cot: true
+data: sst
+hard: false
+log_interval: 2
+max_tokens: 16384
+model: gemini-2.0-flash
+num_examples: null
+sample_size: 20000
+temperature: 1.0
