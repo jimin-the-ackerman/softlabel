@@ -1,0 +1,24 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Large / regenerable artifacts
+results/raw/
+data/raw/
+*.npy
+*.pt
+*.ckpt
+
+# OS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/

@@ -1,0 +1,29 @@
+# Core
+numpy
+pandas
+scipy
+scikit-learn
+torch
+
+# LLM generation (LangChain-based, matches thesis-era pipeline)
+langchain
+langchain-core
+langchain-openai
+openai
+pydantic
+
+# Rebuttal-era additions (DistilBERT+LoRA finetuning, Table 2)
+transformers
+peft
+datasets
+
+# Metrics / diversity
+nltk
+
+# Utilities
+python-dotenv
+pyyaml
+rich
+tqdm
+joblib
+matplotlib
