@@ -3,7 +3,7 @@
 > Master's thesis, Korea University (Digital Business, Aug 2025) · Submitted to **NeurIPS 2025**
 > (rejected after rebuttal; see [`docs/rebuttal_summary.md`](docs/rebuttal_summary.md))
 >
-> Thesis PDF: *[link TBD]* · Advisor: Prof. Hyungu Kahng
+> Thesis PDF: [master_thesis.pdf](paper/master_thesis.pdf) · Advisor: Prof. Hyungu Kahng
 
 Most LLM-based synthetic data generation conditions the model on a **hard label** —
 "write a positive review." This project asks what happens if you condition on a
